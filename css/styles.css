@@ -10,10 +10,12 @@
 html{
     font-size: 62.5%;
     box-sizing: border-box;
+   
 }
 
 *, *:before, *:after{
     box-sizing: inherit;
+     /* outline: 1px solid red;   */
 }
 
 body{
@@ -21,6 +23,7 @@ body{
     font-size: 1.6rem;
     line-height: 1.8;
     background-color: var(--negro);
+    
 }
 h1,h2,h3{
     font-weight: 900;
@@ -28,10 +31,11 @@ h1,h2,h3{
 }
 
 h1{
- font-size: 3.8rem;
+ font-size: 2.8rem;
 }
 h2{
  font-size: 2.8rem;
+ margin: 0;
 }
 h3{
  font-size: 2rem;
@@ -73,6 +77,9 @@ img{
     margin-top: 5rem;
 }
 
+.activo{
+    background-color: var(--dorado2);
+}
 
 
 .degradado-dorado {
@@ -80,12 +87,13 @@ img{
     background: linear-gradient(to right, var(--dorado2) 0%, var(--dorado) 100%);
     -webkit-background-clip: text;
     background-clip: text;
+    margin:0
 }
 
 /* estilos del header */
 
 .header {
-    min-height: 80rem;
+    min-height:60rem;
     /* altura minima del header*/
     background-color: var(--negro);
     padding: 5rem 0;
@@ -95,7 +103,7 @@ img{
 .contenido-header {
     display: flex;
     flex-direction: column;
-    height: calc(80rem - 4rem);
+    height: calc(60rem - 4rem);
     justify-content: space-between;
     /* alinea verticalmente en column */
     color: var(--blanco);
@@ -124,7 +132,9 @@ img{
 
 .logo img{
 
-    margin:0 auto;
+    max-width:20rem;
+    margin: 0 auto;
+
    
 }
 
@@ -137,8 +147,7 @@ img{
     }
 
     .logo img{
-
-       margin:0 ;
+       margin:0;
        
     }
 
@@ -217,6 +226,8 @@ alineamos el telefono y el menu de navegacion */
 .slogan{
     text-align: center;
     
+    
+    
 }   
 
 @media (min-width: 768px) { 
@@ -235,6 +246,8 @@ alineamos el telefono y el menu de navegacion */
     }
 }
 
+
+
 .slogan p{
   margin: 0;
   line-height: 1;}
@@ -244,19 +257,33 @@ alineamos el telefono y el menu de navegacion */
 
 
 .container-slider{
-    max-width:100rem;
-    margin:0 auto ;
-    padding-top: 5rem;
+    max-width:70%;
+    
+    
+    padding-top: 2rem;
    
   
 }
 
-
 .slider{
     width:100%;
-
+    margin-top:10rem;
     overflow: hidden;
 }
+
+@media (min-width:768px) { 
+   
+.slider{
+    margin-top: 30rem;
+}
+}
+
+@media (min-width:1200px) { 
+   
+    .slider{
+        margin-top:5rem;
+    }
+    }
 
 .slider ul{
     padding: 0;
