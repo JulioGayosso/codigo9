@@ -23,7 +23,7 @@ body{
     font-family: var(--fuentePrincipal);
     font-size: 1.6rem;
     line-height: 1.8;
-   background-color: var(--negro);
+/*    background-color: var(--negro); */
     
 }
 h1,h2,h3{
@@ -408,6 +408,71 @@ alineamos el telefono y el menu de navegacion */
     margin: 0;
     padding: 2rem;
     color: var(--blanco)
+}
+
+/* estilos de eventos */
+.evento{
+    background-color:var(--blanco);
+    padding: 2rem;
+}
+
+.evento h2{
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.evento .celebra{
+    color:var(--dorado2);
+    font-weight: 900;
+
+}
+.eventos{
+    margin-bottom: 5rem;
+}
+
+@media (min-width: 1024px) { 
+    .eventos{
+        display:flex;
+        gap: 5rem;
+        align-items: center;
+    }
+}
+
+.eventos:last-of-type{
+    margin-bottom: 0;
+}
+
+.texto:nth-child(even){
+    order: -1;
+}
+
+    .imagen{
+        
+    }
+
+    .imagen,
+    .texto {
+        flex: 1;
+    }
+
+    .texto {
+        margin-top: 1rem;
+       
+    }
+
+    h3 {
+        margin: 0;
+        text-align: left;
+    }
+
+    
+
+
+/* estilos de footer */
+
+.footer{
+    background-color: var(--negro);
 }
 
 
