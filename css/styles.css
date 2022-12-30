@@ -370,6 +370,13 @@ alineamos el telefono y el menu de navegacion */
     
     
 }
+
+.direccion{
+    color: var(--negro);
+    
+    
+}
+
 .fiesta img{
     margin-top:2rem;
     transform: rotate(-6deg);  
