@@ -281,7 +281,7 @@ alineamos el telefono y el menu de navegacion */
     
 }
 
-@media (min-width:768px) { 
+@media (min-width:1024px) { 
 
     .grid-crea{
         display: grid;
@@ -372,20 +372,17 @@ alineamos el telefono y el menu de navegacion */
 }
 .fiesta img{
     margin-top:2rem;
-   /*  transform: rotate(-6deg);  */
+    transform: rotate(-6deg);  
     border: .5rem solid var(--blanco);
     box-shadow: 9px 10px 5px -7px rgb( 0 0 0 / .35);
 }
+
 .fiesta-grid{
     display: grid;
     grid-template-columns: repeat(2 ,1fr);
-    gap:4rem;
-    padding: 5rem;
+    gap: 4rem;
+    align-items:center;
 }
-
-
-
-
 
 .contenido-footer{
     padding: 5rem;
